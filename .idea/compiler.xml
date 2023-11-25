@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="IOT_backend" />
+        <module name="IOT_common" />
+        <module name="IOT_interface" />
+        <module name="IOT_service_provide" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="IOT_backend" target="1.8" />
+      <module name="IOT_common" target="1.8" />
+      <module name="IOT_interface" target="1.8" />
+      <module name="IOT_parent" target="1.8" />
+      <module name="IOT_service_provide" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="IOT_parent:war">
+    <output-path>$PROJECT_DIR$/IOT_parent/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>IOT_parent</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="linxi_it.war">
+      <element id="artifact" artifact-name="IOT_parent:war exploded" />
+    </root>
+  </artifact>
+</component>

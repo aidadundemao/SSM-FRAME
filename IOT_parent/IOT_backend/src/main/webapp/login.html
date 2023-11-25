@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- 引入样式 -->
+        <link rel="stylesheet" href="plugins/elementui/index.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body >
+    <el-progress type="dashboard" :percentage="percentage" :color="colors"></el-progress>
+    <div>
+        <el-button-group>
+            <el-button icon="el-icon-minus" @click="decrease"></el-button>
+            <el-button icon="el-icon-plus" @click="increase"></el-button>
+        </el-button-group>
+    </div>
+    <el-switch
+            v-model="value"
+            active-color="#13ce66"
+            inactive-color="#ff4949">
+    </el-switch>
+
+    </body>
+    <!-- 引入组件库 -->
+    <script src="js/vue.js"></script>
+    <script src="plugins/elementui/index.js"></script>
+
+    <script>
+
+        var vue = new Vue({
+            el: '#app',
+            data:{
+                visible: false,
+                percentage: 10,
+                colors: [
+                    {color: '#f56c6c', percentage: 20},
+                    {color: '#e6a23c', percentage: 40},
+                    {color: '#5cb87a', percentage: 60},
+                    {color: '#1989fa', percentage: 80},
+                    {color: '#6f7ad3', percentage: 100}
+                ],
+                value: true
+            },
+            methods:{
+                increase() {
+                    this.percentage += 10;
+                    if (this.percentage > 100) {
+                        this.percentage = 100;
+                    }
+                },
+                decrease() {
+                    this.percentage -= 10;
+                    if (this.percentage < 0) {
+                        this.percentage = 0;
+                    }
+                }
+
+            }
+        })
+    </script>
+</html>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="IOT_common:war">
+    <output-path>$PROJECT_DIR$/IOT_parent/IOT_common/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>IOT_common</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="IOT_common-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="IOT_common:war exploded" />
+    </root>
+  </artifact>
+</component>
